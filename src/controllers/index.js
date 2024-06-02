@@ -1,4 +1,5 @@
 module.exports = {
     getBrands: require("./getBrands"),
-    getModels: require("./getModels")
+    getModels: require("./getModels"),
+    getModelsByBrand: require("./getModelsByBrand")
 };
