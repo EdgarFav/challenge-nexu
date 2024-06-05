@@ -1,19 +1,20 @@
 const mongoose = require("mongoose");
 
 const carSchema = new mongoose.Schema({
-    _id: {
-        type: Number,
-        required: true,
-        unique: true
-    },
+    // id: {
+    //     type: Number,
+    //     // type: mongoose.Schema.Types.ObjectId,
+    //     auto: true
+    //     // default: () => new mongoose.Types.ObjectId()
+    // },
     name: {
         type: String,
-        required: true
     },
     average_price: {
         type: Number,
         minlength: 100000,
-        required: true
+        default: 0
+
     },
     brand_name: {
         type: String,
